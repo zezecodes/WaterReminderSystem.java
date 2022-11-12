@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class WaterReminderSystem {
     public static void main(String[] args){
@@ -9,6 +10,8 @@ public class WaterReminderSystem {
                 "Water is essential for the kidneys and other bodily functions", "When dehydrated, the skin can become more vulnerable to skin disorders and wrinkling",
                 "Drinking water instead of soda can help with weight loss", "Around 71 percent of the planet’s surface is covered by water", "Drinking water cushions the brain, spinal cord, and other sensitive tissues",
                 "Approximately 80'%' of your brain tissue is made of water"};
+        // initializing variables for inputs
+        int bottleInputNumber, bottleRefillNumber, bottleTakeoutNumber ,bottleReminderNumber ;
 
         // Generating and printing out random quotes from waterQuotesList array
         Random quotes = new Random();
@@ -19,6 +22,17 @@ public class WaterReminderSystem {
         System.out.println(emojis+"Did you know "+randomQuotesGenerator+"?");
 
         // Gets the number of bottles put in the fridge everyday
+        Scanner bottleInput = new Scanner(System.in);
+        System.out.print("How many bottles do you normally put in the refrigerator daily? - ");
+        bottleInputNumber = bottleInput.nextInt();
 
+        System.out.print("How many times do you refill your fridge? - ");
+        bottleRefillNumber = bottleInput.nextInt();
+
+        System.out.print("How many times do you take water out of the fridge? - ");
+        bottleTakeoutNumber = bottleInput.nextInt();
+
+        System.out.print("How many bottles should be in the fridge for reminder to begin? - ");
+        bottleReminderNumber = bottleInput.nextInt();
     }
 }
