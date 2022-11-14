@@ -19,7 +19,7 @@ public class WaterReminderSystem {
         String randomQuotesGenerator = waterQuotesList[quotesItem].toLowerCase();
 
         String emojis = "✨";
-        System.out.println(emojis+"Did you know "+randomQuotesGenerator+"?");
+        System.out.println(emojis+"Did you know "+randomQuotesGenerator+"?\n");
 
         // Gets the number of bottles put in the fridge everyday
         Scanner bottleInput = new Scanner(System.in);
@@ -34,5 +34,7 @@ public class WaterReminderSystem {
 
         System.out.print("How many bottles should be in the fridge for reminder to begin? - ");
         bottleReminderNumber = bottleInput.nextInt();
+
+
     }
 }
