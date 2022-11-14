@@ -35,6 +35,15 @@ public class WaterReminderSystem {
         System.out.print("How many bottles should be in the fridge for reminder to begin? - ");
         bottleReminderNumber = bottleInput.nextInt();
 
+        // Bottle reduction visualization logic (More accurate timing and implementation will be added)
+        int i=bottleInputNumber;
+        while(i>bottleReminderNumber && i<=bottleInputNumber){
+            System.out.println(i);
+            i-=1;
+        }
+        System.out.println("Time to refill");
+
+
 
     }
 }
